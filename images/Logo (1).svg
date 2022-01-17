@@ -1,0 +1,14 @@
+<svg version="1.2" baseProfile="tiny-ps" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 146 52" width="146" height="52">
+	<title>headear area</title>
+	<defs>
+		<image  width="146" height="52" id="img1" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJIAAAA0CAMAAABW4JFPAAAAAXNSR0IB2cksfwAAAJ9QTFRFIiIiIiIiIiIiIiIiIiIiIiIiIiIi8VgiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiij0i8Vgi8Vgi8Vgi8Vgi8Vgi8Vgi8Vgi8Vgi8Vgio0Qi8Vgi8VgifToi8Vgi8VgivUsi8Vgi8Vgi8Vgiij0iYzMiVjAiPCki11EisEciLyUiyk4icDYilkAiVjAiVjAi5FUi41Qi41QiSw9a7QAAADV0Uk5TABBwn7+AQADv/88wUCCvj99gQEAQv/+PIFDv3/+fMP+AcP+vz2D/////////////AL//AO8Vfy2EAAAEm0lEQVR4nNWZaWPaOBCGbSwZy8aAlyMkWSgUyLbdXnv8/9+2GskajQ4bhzaUfT8QSdaMH2ZGsiOSpF/pKGOM55Er47fSBSJeiIKVQpTVnSClTDAIUMqLYnIfSJnI2lZdFvU9IOViiu26YDci6kWaChIZLtww/RqkYko6tRjdAZLgDuDsNkSvQGJOMd0f0hsS/c+QKq+W2BujDECa4EYJSsX8NkR9SFzQVOVC3IaoN3GsoVGazm5D1IlU5b5+W0gtHePV2mj1sPGHQI9P8uMZ5z/L3pM/ZzEet396kaq58PW7dvAQR8Ir3u228NnSjnfQ2V6JFBK9Mx72XUiaybvdI3we2umH9tbXIOUBkXiPKfKQVnupo3Fuh5Q2KlfG5NRm0Z8zBGnUg7T2kHTUziZMdkjrAS7oClx2zRmCNAuRXhBpY10R36s2Gv7tVP2cLfbuSiTWh2Rtqe99B5LK3Fa1jm3erkFKixDpD0Qizojvhy4kuPCkWk90CQxBmjJUhEh8QKRtDGn5TOrElO4ZMwf3ezR5C+fEkSKLzNFHRFpFkBYnWifuTAML4TqhmTOnI0qcxWSZrBcXySrYlzTSvi0hQDu8Cikuy/QJvWziSOHurZE22mZnTS8hpbxPtqzsxrSIIi388kKdVHgOmLeL5Z1dKCKjP/Hm1pupU1hL206kgwrGCfN2EWkyEMluTHbJGd97Nykeks4cSfk1WyXdo+YBkl1yxvcSwnTsQlIBOhLDH0SqDZLdmOySQ997dBpDOrR251ciXUogQcIlh75VmFZmaLswWtrMrc3TNzIHLh5Mf4NIkae/o8/B4qJfF8MUvAuB9LvLkZo5c5z+3qYoeLPNXUpiFCJhmKJIZydvw5Eicl4uv6DRNkTSYTp3IC2dvA1CaqIPEzgQJLJ7JS65HaReFaR8zOn2bkG1JBN3Y2rmzHH6G++x0SMbJfpiiUtk3KXEndk5z3U3IaEJ/xMIypu+WI7pPtLhfyB76M/sjbG3JamvQYm0GMqo4Zyc+aLb6LaHnHQuwQ8tOpA+EaS992UaZTNNYwA/QWmc6BtdFFsXqRKC5xJr1u31hxR/vXyhRGrJwdx6xOHYIFPnGXL7T1QKGxmtmnPZmiTpCH5ZcHto1/A858pkVJPhQLFd/OP7tSuN1MC1MpWphpNVed86qSCFRQVfDLaQDLoTr4d2DEbRBIcDzT5/cPX15cva1waQasgXE1kihPmNRa6NLM9EkUqILJ8KMZMTysTtoZ3ce+ZMfk6lydwOE31X+uvvACDUApBG0r28W0GQGtmDBdLAaZQ6klL5dHtox+CoXxZirU4dcdjqH61/BxDBkkvwfZQg6VMyJr8uQuQOEnygHYOTRzWcJMQdymxUQ4gM0ly9n8tHIRxqVozVA5FaOx+pHfaJXoE0kjUjU5G2K47LmMu8pLCNTPqQ0E4hydlVkqrEtcM+kT7quCRV3rKW5zyTu5FsMNmAG5Si5KUu6E4ktFNIKjql/FI47BONl9uLQM+PehOo4HENPx6qRgE7QQotlvYioZ1GMibWnY80VMquzlsPdW4qvM79H+4iQjvfCzT+A27VEkr55TDIAAAAAElFTkSuQmCC"/>
+	</defs>
+	<style>
+		tspan { white-space:pre }
+	</style>
+	<g id="headear area">
+		<g id="logo">
+			<use id="Logo (1)" href="#img1" x="0" y="0" />
+		</g>
+	</g>
+</svg>
