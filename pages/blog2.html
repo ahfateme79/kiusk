@@ -15,7 +15,7 @@
     <header class="bg-white header" id="header">
         <div class="bg-dark">
             <div class="container">
-                <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+                <nav class="navbar navbar-expand-lg navbar-light bg-dark p-0">
                     <div class="container-fluid">
                         <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                             data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
@@ -116,11 +116,12 @@
 
                 </nav>
             </div>
-            <p class="d-flex justify-content-between col-12 border-top container">
+            <p class="d-flex justify-content-between col-12 border-top container colpas-button">
                 <span><a href="">خانه</a><span>/قوانین و مقررات</span></span>
                 <button class="btn btn-primary" type="button" data-bs-toggle="collapse"
                     data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
                     <i class="far fa-search text-white"></i>
+                    <i class="fas fa-times text-white"></i>
                 </button>
             </p>
 
@@ -158,7 +159,7 @@
                                 </div>
                             </div>
                             <div class="col-lg-2 mt-3">
-                                <button type="submit" class="btn btn-primary w-100">جستجو</button>
+                                <button type="submit" class="btn btn-primary w-100 hover-shadow">جستجو</button>
                             </div>
                         </div>
     
@@ -946,6 +947,11 @@
                             <img src="../images/4611.png"
                                 alt="کیوسک | نیازمندی های ایرانیان کانادا | آگهی رایگان نیازمندی ها">
                         </a>
+                        <p>
+                            لیست شغل های ایرانیان مقیم در شهرهای کانادا. معرفی بیزینس و نیازمندی های ایرانی در
+                            تورنتو،مونترال و ونکوور و سایر شهرها.در کیوسک میتوانید نیازمندی های مشاغل ایرانی موجود در
+                            کانادا را مشاهده کنید. </p>
+
                     </div>
                 </div>
                 <!--end col-md-5-->
@@ -956,7 +962,8 @@
                             <nav>
                                 <div class="">
                                     <ul id="" class="list-unstyled">
-                                        <li id="menu-item-52" class="menu-item">
+                                        <li id="menu-item-52"
+                                            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-52">
                                             <a href="">حساب کاربری</a></li>
                                     </ul>
                                 </div>
@@ -983,8 +990,8 @@
         </div>
         <div class="background">
             <div class="background-image original-size"
-                style="background-image: url(../images/hero-background-icons.jpg);">
-                <img src="../images/hero-background-icons.jpg"
+                style="background-image: url(../images/footer-background-icons.jpg);">
+                <img src="../images/footer-background-icons.jpg"
                     alt="کیوسک | نیازمندی های ایرانیان کانادا | آگهی رایگان نیازمندی ها">
             </div>
             <!--end background-image-->
@@ -1168,7 +1175,12 @@
     </div>
     <!-- script -->
     <script src="../js/bootstrap.bundle.min.js"></script>
-
+    <script>
+        let colaps = document.querySelector('.colpas-button').addEventListener("click", () => {
+           document.querySelector(".fa-search").classList.toggle('d-none')
+           document.querySelector(".fa-times").classList.toggle('disply')
+        })
+    </script>
 </body>
 
 </html>
