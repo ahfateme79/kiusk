@@ -1,4 +1,5 @@
 @import './bootstrap.rtl.css';
+
 * {
     padding: 0;
     box-sizing: border-box;
@@ -62,7 +63,7 @@ header::after {
 }
 
 .nav-link.active-link-primary {
-    background-color: #0d6efd;
+    background-color: #1097cb;
     border-radius: 5px !important;
     -webkit-border-radius: 5px !important;
     -moz-border-radius: 5px !important;
@@ -72,7 +73,7 @@ header::after {
 }
 
 .navigation>ul>li>a:hover {
-    background-color: #0d6efd;
+    background-color: #1097cb;
     border-radius: 5px !important;
     -webkit-border-radius: 5px !important;
     -moz-border-radius: 5px !important;
@@ -202,11 +203,9 @@ li.nav-item:hover>ul.left-ul {
 .nav-btn li.top-category-btn {
     display: block;
     width: auto;
-    
+
 }
-.nav-btn li{
-    
-}
+
 .btn {
     display: inline-flex;
     position: relative;
@@ -227,16 +226,21 @@ li.nav-item:hover>ul.left-ul {
     -o-border-radius: 0.2rem;
 }
 
+.btn-primary {
+    background-color: #1097cb !important;
+    color: #ffff !important;
+}
+
 .btn.btn-framed.btn-primary {
-    color: #1097cb;
-    border:.5px solid #1097cb !important;
-    background-color: transparent;
+    color: #1097cb !important;
+    border: .5px solid #1097cb !important;
+    background-color: transparent !important;
     height: 40px;
     font-size: 10px;
 }
 
 .btn.btn-framed.btn-primary:hover {
-    color: #fff;
+    color: #fff !important;
     background-color: #1097cb !important;
 }
 
@@ -287,6 +291,8 @@ li.nav-item:hover>ul.left-ul {
         display: inline-block;
         width: 100%;
     }
+
+
 }
 
 
@@ -324,7 +330,8 @@ input[type="url"],
 input[type="tel"],
 textarea.form-control,
 textarea,
-select ,.form-select{
+select,
+.form-select {
     box-shadow: inset 0 0 1rem 0 rgb(0 0 0 / 10%);
     border: 0.1rem solid rgba(0, 0, 0, .15);
     border-radius: 0.2rem;
@@ -337,13 +344,14 @@ select ,.form-select{
     outline: none !important;
     width: 100%;
     height: 60px !important;
-    padding: 1.3rem !important;
+    padding: 1.1rem !important;
     -webkit-border-radius: 0.2rem;
     -moz-border-radius: 0.2rem;
     -ms-border-radius: 0.2rem;
     -o-border-radius: 0.2rem;
     font-weight: 700;
 }
+
 input[type="text"],
 input[type="email"],
 input[type="date"],
@@ -353,12 +361,12 @@ input[type="password"],
 input[type="number"],
 input[type="url"],
 input[type="tel"],
-textarea.form-control
-{
-  font-size: .8rem;
-  margin-top: 15px;
-  overflow: hidden;
+textarea.form-control {
+    font-size: .8rem;
+    margin-top: 15px;
+    overflow: hidden;
 }
+
 .form-control {
     display: block;
     width: 100%;
@@ -521,16 +529,18 @@ h4.location {
     -ms-transform: translateY(55%);
     -o-transform: translateY(55%);
 }
-@media screen and (min-width:469px) and (max-width:760px){
+
+@media screen and (min-width:469px) and (max-width:760px) {
     .price {
         transform: translateY(130px) !important;
         -webkit-transform: translateY(130px) !important;
         -moz-transform: translateY(130px) !important;
         -ms-transform: translateY(130px) !important;
         -o-transform: translateY(130px) !important;
-}
+    }
 
 }
+
 .nav-link {
     min-height: auto;
 }
@@ -553,11 +563,19 @@ h4.location {
     .inner-ul {
         width: 100%;
     }
+    .nav-btn li:last-child .btn.btn-framed.btn-primary {
+        transform: translateX(-20px);
+        -webkit-transform: translateX(-20px);
+        -moz-transform: translateX(-20px);
+        -ms-transform: translateX(-20px);
+        -o-transform: translateX(-20px);
+        width: 250px;
+}
+    
 }
 
 .card-bg {
     background-color: #f7f7f7;
-
 }
 
 .meta {
@@ -902,8 +920,9 @@ ul.list-style-type {
     position: absolute;
     width: 300px;
     left: 0;
-    top: -2px;
+    top: -10px;
     padding: 10px 1.2rem !important;
+    z-index: 76;
 }
 
 @media screen and (max-width:600px) {
@@ -1149,13 +1168,15 @@ ul.list-style-type {
 .fa-envelope-open:before {
     content: "\f2b6";
 }
+
 fieldset {
     background: #fdfdfd;
-    padding:20px;
+    padding: 20px;
     margin: 30px 0;
     border-radius: 5px;
     box-shadow: 0 0px 10px 0px #d6d6d6;
 }
+
 fieldset legend {
     box-shadow: 0 0px 10px 0px #d6d6d6;
     display: inline-block;
@@ -1170,45 +1191,49 @@ fieldset legend {
     -ms-transform: translateY(-30px);
     -o-transform: translateY(-30px);
 }
-.list-group-item:hover{
+
+.list-group-item:hover {
     background-color: rgb(247, 242, 242);
 }
-#specificSizeSelect{
-   margin-top: 15px;
-   font-size: .9rem;
+
+#specificSizeSelect {
+    margin-top: 15px;
+    font-size: .9rem;
 }
 
 .container-step {
     text-align: center;
-  }
-  @media screen and (max-width:768px){
-    .container-step{
-        transform: scale(.7);
-        -webkit-transform: scale(.7);
-        -moz-transform: scale(.7);
-        -ms-transform: scale(.7);
-        -o-transform: scale(.7);
 }
-  }
-  .stepper-wrapper {
+
+@media screen and (max-width:768px) {
+    .container-step {
+        transform: scale(.7) translateX(20%);
+        -webkit-transform: scale(.7) translateX(20%);
+        -moz-transform: scale(.7) translateX(20%);
+        -ms-transform: scale(.7) translateX(20%);
+        -o-transform: scale(.7) translateX(20%);
+    }
+}
+
+.stepper-wrapper {
     margin: 50px auto;
     width: 500px;
     display: flex;
     align-items: center;
     justify-content: space-between;
     position: relative;
-  }
-  
-  .stepper-wrapper::before {
+}
+
+.stepper-wrapper::before {
     content: "";
     width: 100%;
     height: 3px;
     background-color: lightgray;
     position: absolute;
     z-index: 1;
-  }
-  
-  .progress {
+}
+
+.progress {
     content: "";
     width: 0%;
     height: 3px;
@@ -1216,9 +1241,9 @@ fieldset legend {
     position: absolute;
     z-index: -1;
     transition: width 1s;
-  }
-  
-  .screen-indicator {
+}
+
+.screen-indicator {
     border-radius: 5px;
     border: 3px solid lightgrey;
     background-color: white;
@@ -1233,45 +1258,46 @@ fieldset legend {
     -ms-border-radius: 5px;
     -o-border-radius: 5px;
 }
-  
-  .completed {
+
+.completed {
     border-color: rgb(78, 196, 243);
     color: #fff;
     background-color: rgb(78, 196, 243);
-  }
-  
-  .control-btn {
+}
+
+.control-btn {
     background-color: rgb(238, 238, 238);
     padding: 5px 10px;
     border: 1px solid gray;
     border-radius: 5px;
     cursor: pointer;
-  }
-  
-  .control-btn:disabled {
-    cursor: not-allowed;
-  }
-  
-  .control-btn:not(:disabled):hover {
-    background-color: lightgray;
-  }
+}
 
-  .container-file {
+.control-btn:disabled {
+    cursor: not-allowed;
+}
+
+.control-btn:not(:disabled):hover {
+    background-color: lightgray;
+}
+
+.container-file {
     width: 100%;
     margin: 0 auto;
     background: #ffffff;
     padding: 1rem;
     border-radius: 0.5rem;
     box-shadow: 0 0.75rem 1.5rem rgba(19, 19, 19, 0.03);
-  }
-  
-  .dropzone {
+}
+
+.dropzone {
     border: 0.0625rem solid #c6ccd6;
     border-radius: 0.5rem;
     background-color: #f9f9fb;
     display: block;
-  }
-  .dropzone .dropzone-container {
+}
+
+.dropzone .dropzone-container {
     padding: 2rem 0;
     width: 100%;
     height: 100%;
@@ -1282,15 +1308,18 @@ fieldset legend {
     align-items: center;
     color: #8c96a8;
     z-index: 20;
-  }
-  .dropzone .dropzone-container .dropzone-title {
+}
+
+.dropzone .dropzone-container .dropzone-title {
     padding-top: 1.5rem;
-  }
-  .dropzone .dropzone-container .browse {
+}
+
+.dropzone .dropzone-container .browse {
     text-decoration: underline;
     color: #007bff;
-  }
-  .dropzone .file-input {
+}
+
+.dropzone .file-input {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -1299,9 +1328,9 @@ fieldset legend {
     opacity: 0;
     visibility: hidden;
     cursor: pointer;
-  }
-  
-  .file-icon {
+}
+
+.file-icon {
     /* Need position to allow stacking of pseudo-elements */
     position: relative;
     width: 4rem;
@@ -1315,25 +1344,32 @@ fieldset legend {
     font-size: 2rem;
     color: #007bff;
     /* Second sheet of paper */
-  }
-  .file-icon, .file-icon:before, .file-icon:after {
+}
+
+.file-icon,
+.file-icon:before,
+.file-icon:after {
     background-color: #ffffff;
     border-radius: 0.25rem;
     border: 0.125rem solid #b8bec9;
-  }
-  .file-icon:before, .file-icon:after {
+}
+
+.file-icon:before,
+.file-icon:after {
     content: "";
     position: absolute;
     width: 100%;
     height: 100%;
     border: 0.125rem solid #ccd0d8;
-  }
-  .file-icon:before {
+}
+
+.file-icon:before {
     left: -0.625rem;
     top: 0.5rem;
     z-index: -1;
-  }
-  .file-icon:after {
+}
+
+.file-icon:after {
     top: -0.25rem;
     right: -0.25rem;
     left: auto;
@@ -1343,21 +1379,25 @@ fieldset legend {
     border-width: 0.625rem;
     border-style: solid;
     border-color: #f9f9fb #f9f9fb #b8bec9 #b8bec9;
-  }
-  .border-blue{
-      border-top: 3px solid blue; 
-      padding: 20px 10px;
-      background-color: rgba(231, 235, 227, 0.32);
-  }
-  .noContent{
+}
+
+.border-blue {
+    border-top: 3px solid blue;
+    padding: 20px 10px;
+    background-color: rgba(231, 235, 227, 0.32);
+}
+
+.noContent {
     color: #000 !important;
     background-color: transparent !important;
     pointer-events: none;
-  }
-  .more-content{
+}
+
+.more-content {
     display: none;
-  }
-.forms{
+}
+
+.forms {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
