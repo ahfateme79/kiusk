@@ -165,7 +165,15 @@ header::after {
     visibility: hidden;
 
 }
-
+.child i{
+    transform: translateX(-3px);
+    -webkit-transform: translateX(-3px);
+    -moz-transform: translateX(-3px);
+    -ms-transform: translateX(-3px);
+    -o-transform: translateX(-3px);
+    font-size: 8px;
+    opacity: .8;
+}
 .inner-ul.child:before {
     position: absolute;
     width: 100%;
@@ -386,7 +394,7 @@ textarea.form-control,
 textarea,
 select,
 .form-select {
-    box-shadow: inset 0 0 1rem 0 rgb(0 0 0 / 10%);
+    box-shadow: inset 0 0 .6rem 0 rgb(0 0 0 / 10%);
     border: 0.1rem solid rgba(0, 0, 0, .15);
     border-radius: 0.2rem;
     color: #bab5b5;
@@ -455,6 +463,7 @@ textarea.form-control {
     position: relative;
     display: inline-block;
     font-weight: normal;
+    font-size: .8rem;
 }
 
 .section-title h2:before {
@@ -1565,4 +1574,16 @@ fieldset legend {
 
 .fas.fa-check-circle {
     color: #1097cb;
+}
+/* .blog-block{
+    background-color: #e4e4e4 !important;
+} */
+.far.fa-chevron-left{
+    font-size: 15px;
+    opacity: .7;
+    transform: translateX(-70px);
+    -webkit-transform: translateX(-70px);
+    -moz-transform: translateX(-70px);
+    -ms-transform: translateX(-70px);
+    -o-transform: translateX(-70px);
 }
