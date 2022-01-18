@@ -920,8 +920,8 @@ footer .cp-footer {
     background-image: none;
     width: 30px;
     height: 30px;
-    font-size: 27px;
-    color: black;
+    font-size: 20px;
+    color: #1097cb;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -936,7 +936,10 @@ footer .cp-footer {
     -ms-transform: rotate(0);
     -o-transform: rotate(0);
 }
-
+.accordion-button{
+    font-size: 15px !important;
+    color: rgba(0, 0, 0, 0.55);
+}
 .accordion-button:not(.collapsed) {
     color: black;
     background-color: #ffffff;
