@@ -412,6 +412,27 @@ select,
     -ms-border-radius: 0.2rem;
     -o-border-radius: 0.2rem;
     font-weight: 500;
+    transition: all .3s ease;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -ms-transition: all .3s ease;
+    -o-transition: all .3s ease;
+}
+input[type="text"]:hover,
+input[type="email"]:hover,
+input[type="date"]:hover,
+input[type="time"]:hover,
+input[type="search"]:hover,
+input[type="password"]:hover,
+input[type="number"]:hover,
+input[type="url"]:hover,
+input[type="tel"]:hover,
+textarea.form-control:hover,
+textarea:hover,
+select:hover,
+.form-select:hover{
+    box-shadow: none !important;
+
 }
 
 input[type="text"],
