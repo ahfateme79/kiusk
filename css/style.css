@@ -1587,3 +1587,20 @@ fieldset legend {
     -ms-transform: translateX(-70px);
     -o-transform: translateX(-70px);
 }
+.img-fluid{
+    object-fit: contain;
+}
+.blog-tag span{
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.701);
+    margin: 0 20px;
+}
+.fas.fa-tags{
+    transform: translate(-1px,2px);
+    -webkit-transform: translate(-1px,2px);
+    -moz-transform: translate(-1px,2px);
+    -ms-transform: translate(-1px,2px);
+    -o-transform: translate(-1px,2px);
+    font-size: 14px;
+    margin: 5px 0;
+}
