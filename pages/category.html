@@ -56,9 +56,24 @@
                     <div class="navbar navbar-expand-lg navbar-light navigation collapse navbar-collapse" id="navbar">
                         <ul class="navbar-nav">
                             <li class="nav-item"><a href="" class="nav-link ">علاقه‌مندی ها</a></li>
-                            <li class="nav-item"><a href="" class="nav-link ">علاقه‌مندی ها</a></li>
                             <li class="nav-item"><a href="" class="nav-link active-link-primary">علاقه‌مندی ها</a></li>
-                            <li class="nav-item"><a href="" class="nav-link child">علاقه‌مندی ها<i class="far fa-chevron-down"></i></a>
+                            <li class="nav-item">
+                                <a class="nav-link" data-bs-toggle="collapse" href="#collapseExample" role="button"
+                                    aria-expanded="false" aria-controls="collapseExample">
+                                    علاقه‌مندی ها
+                                </a>
+                                <div class="collapse" id="collapseExample">
+                                    <div class="card card-body">
+                                        <ul class="navbar-nav">
+                                            <li class="nav-item"><a href="">املاک</a></li>
+                                            <li class="nav-item"><a href="">املاک</a></li>
+                                            <li class="nav-item"><a href="">املاک</a></li>
+                                            <li class="nav-item"><a href="">املاک</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="nav-item d-none d-md-block"><a href="" class="nav-link child">علاقه‌مندی ها<i class="far fa-chevron-down"></i></a>
                                 <ul class="inner-ul p-0">
                                     <li class="nav-item"><a href="">املاک</a></li>
                                     <li class="nav-item"><a href="">املاک</a>
@@ -116,28 +131,25 @@
 
                 </nav>
             </div>
-            <p class="d-flex justify-content-between col-12 border-top container colpas-button">
+            <p class="d-flex justify-content-between col-11 col-md-12 border-top container colpas-button">
                 <span class="mt-2 text-title"><a href="">خانه</a><span>/قوانین و مقررات</span></span>
-                <button class="btn btn-primary search-icon-btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample"
-                    aria-expanded="false" aria-controls="collapseExample">
+                <button class="btn btn-primary search-icon-btn" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseExample1" aria-expanded="false" aria-controls="collapseExample1">
                     <i class="far fa-search text-white"></i>
                     <i class="fas fa-times text-white"></i>
                 </button>
             </p>
-        
-            <div class="collapse" id="collapseExample">
-                <form action="" class="mt-3 mb-5 pb-2">
+
+            <div class="collapse" id="collapseExample1">
+                <form action="" class="mt-2 mb-5 ps-4 pe-4 pb-5">
                     <div class="container">
-                        <div class="row align-items-center">
-                            <div class="col-12 col-lg-5 d-inline-block">
-                                <input type="text" class="form-control" placeholder="جستجو در تمام آگهی‌ها"
-                                    aria-label="First name">
-                            </div>
-                            <div class="row g-2 col-12 col-lg-5 form-group">
+                        <div class="row row-cols-3 align-items-center">
+                            <div class="col-12 col-lg-5 "><input type="text" class="form-control"
+                                    placeholder="جستجو در تمام آگهی‌ها"></div>
+                            <div class="row ps-2 g-2 col-12 col-lg-5 ps-2 ps-md-0">
                                 <div class="col-lg-5">
-                                    <div class="form-floating">
-                                        <select class="form-select" id="floatingSelectGrid"
-                                            aria-label="Floating label select example">
+                                    <div class="form-floating p-0 ps-1">
+                                        <select class="form-select">
                                             <option selected>تمام شهر‌ها</option>
                                             <option value="1">One</option>
                                             <option value="2">Two</option>
@@ -146,9 +158,8 @@
                                     </div>
                                 </div>
                                 <div class="col-lg-7">
-                                    <div class="form-floating">
-                                        <select class="form-select" id="floatingSelectGrid"
-                                            aria-label="Floating label select example">
+                                    <div class="form-floating p-0 ps-1">
+                                        <select class="form-select">
                                             <option selected>همه دسته‌بندی‌ها</option>
                                             <option value="1">One</option>
                                             <option value="2">Two</option>
@@ -157,13 +168,11 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-lg-2 mt-3">
-                                <button type="submit" class="btn btn-primary w-100 hover-shadow">جستجو</button>
-                            </div>
+                            <div class="col-12 col-lg-2 mt-3"><button type="submit"
+                                    class="btn btn-primary w-100 hover-shadow">جستجو</button></div>
                         </div>
-    
                     </div>
-            </form>
+                </form>
             </div>
             <div class="container p-0 pt-5
             pb-5">
