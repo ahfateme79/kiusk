@@ -76,6 +76,7 @@ h5,
 h6,
 h1 a {
     color: #212483 !important;
+    line-height: 1.5;
 }
 
 h2 {
@@ -656,14 +657,10 @@ h4.location a {
     color: #4c4c4c;
 }
 
-@media screen and (min-width:469px) and (max-width:768px) {
+@media screen and (min-width:425px) and (max-width:768px) {
     .price {
-        transform: translateY(-40px);
-        -webkit-transform: translateY(-40px);
-        -moz-transform: translateY(-40px);
-        -ms-transform: translateY(-40px);
-        -o-transform: translateY(-40px);
-    }
+     top: 15.5rem !important;
+}
 
 }
 
@@ -678,7 +675,7 @@ h4.location a {
 
 }
 
-@media screen and (max-width:469px) {
+@media screen and (max-width:377px) {
     .price {
         transform: translateY(30px);
         -webkit-transform: translateY(30px);
@@ -1062,10 +1059,39 @@ ul.list-style-type {
     }
 }
 
+.poster {
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+.date{
+    display: none;
+}
 @media screen and (max-width:600px) {
     .poster {
-        display: none !important;
+        width: 100% !important;
+        object-fit: cover;
+        border-radius: 5px 5px 0 0 !important;
+        -webkit-border-radius: 5px 5px 0 0 !important;
+        -moz-border-radius: 5px 5px 0 0 !important;
+        -ms-border-radius: 5px 5px 0 0 !important;
+        -o-border-radius: 5px 5px 0 0 !important;
     }
+
+    .date {
+        position: absolute;
+        bottom: 10px;
+        right: 10px;
+        color: white;
+        display: inline-block;
+        font-size: 12px;
+    }
+    .article-para h2{
+        color: rgba(0, 0, 0, 0.687) !important;
+    }
+    
 }
 
 .form-colaps {
@@ -1116,7 +1142,7 @@ ul.list-style-type {
 @media screen and (max-width:600px) {
     .absolot {
         top: -50px;
-        right: 0;
+        left: 0;
     }
 
     /* .filter {
@@ -1265,19 +1291,24 @@ ul.list-style-type {
     font-weight: normal;
 }
 
-.ads-next .carousel-control-next-icon {
+.owl-carousel .owl-nav button.owl-next {
     position: absolute;
-    left: -10px;
+    left: -5px;
     background-color: gray;
     border-radius: 5px;
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
     -ms-border-radius: 5px;
     -o-border-radius: 5px;
+    color: white;
+    width: 30px;
+    height: 30px;
+    top: 50%;
+    font-size: 20px;
 
 }
 
-.ads-prev .carousel-control-prev-icon {
+.owl-carousel .owl-nav button.owl-prev {
     position: absolute;
     right: -10px;
     background-color: gray;
@@ -1286,6 +1317,12 @@ ul.list-style-type {
     -moz-border-radius: 5px;
     -ms-border-radius: 5px;
     -o-border-radius: 5px;
+    color: white;
+    width: 30px;
+    height: 30px;
+    top: 50%;
+    font-size: 20px;
+
 }
 
 .fa-user:before {
@@ -1649,7 +1686,7 @@ a.text-little {
     color: rgb(70, 174, 70) !important;
 }
 
-.article-para {
+.article-para p{
     font-size: 13px;
 }
 
@@ -1920,6 +1957,10 @@ p {
 }
 
 @media screen and (max-width:768px) {
+    .loadmore {
+        width: 100%;
+    }
+
     .article>div:first-child {
         order: 2;
         margin-top: 30px;
@@ -1971,6 +2012,30 @@ p {
     .nav-item .collapse .card ul li:not(:last-child) {
         border-bottom: 1px solid rgb(191, 194, 194);
 
+    }
+
+    .owl-carousel button.owl-dot {
+        border: 3px solid rgb(199, 195, 195) !important;
+        width: 10px;
+        height: 10px;
+        border-radius: 100%;
+        -webkit-border-radius: 100%;
+        -moz-border-radius: 100%;
+        -ms-border-radius: 100%;
+        -o-border-radius: 100%;
+        margin: 3px;
+    }
+
+    .owl-carousel button.owl-dot.active {
+        background-color: rgb(199, 195, 195);
+    }
+
+    .owl-dots {
+        text-align: center;
+    }
+
+    .owl-nav {
+        display: none !important;
     }
 }
 
@@ -2031,6 +2096,7 @@ strong {
     margin: 0;
     opacity: 1;
 }
+
 .ads-card-title-blue .card .card-body .meta h5.card-title {
     color: #212483 !important;
     font-size: 17px !important;
@@ -2048,9 +2114,11 @@ strong {
     padding: 2rem 3rem;
 
 }
-.text-dark{
+
+.text-dark {
     color: black !important;
 }
+
 .alert-warning h2 {
     font-weight: normal;
 }
@@ -2083,6 +2151,7 @@ strong {
 .list-group-item.back a {
     font-size: 18px;
 }
+
 .back-icon {
     border-left: 1px solid rgb(191, 186, 186);
     padding-left: 10px;
@@ -2091,46 +2160,71 @@ strong {
     align-items: center;
     height: 100%;
 }
-.list-group-item.back:hover>a{
+
+.list-group-item.back:hover>a {
     color: black;
 }
+
 /* p{
     margin: 0 !important;
 } */
-.info-contact span,.info-contact a{
+.info-contact span,
+.info-contact a {
     font-size: 13px;
     color: #000;
     font-weight: normal;
 }
-.info-contact span{
+
+.info-contact span {
     font-weight: bold;
 }
-.report_ad a{
+
+.report_ad a {
     font-size: 12px;
 }
-.border-bottom-accordin{
+
+.border-bottom-accordin {
     border-bottom: 1px solid rgb(225, 219, 219) !important;
 }
-.paragrapg-margin p{
-    margin:  0 !important;
+
+.paragrapg-margin p {
+    margin: 0 !important;
 }
-.paragrapg-margin .accordion-item a{
+
+.paragrapg-margin .accordion-item a {
     color: black;
 }
-.paragrapg-margin .accordion-item a:hover{
+
+.paragrapg-margin .accordion-item a:hover {
     color: #007bff;
 }
-.paragrapg-margin button{
+
+.paragrapg-margin button {
     font-size: 12px;
 }
-.blog-carousel .prev .carousel-control-prev-icon,.blog-carousel .next .carousel-control-next-icon{
-  transform: translateY(-235px);
-  -webkit-transform: translateY(-235px);
-  -moz-transform: translateY(-235px);
-  -ms-transform: translateY(-235px);
-  -o-transform: translateY(-235px);
+
+.blog-carousel .prev .carousel-control-prev-icon,
+.blog-carousel .next .carousel-control-next-icon {
+    transform: translateY(-235px);
+    -webkit-transform: translateY(-235px);
+    -moz-transform: translateY(-235px);
+    -ms-transform: translateY(-235px);
+    -o-transform: translateY(-235px);
 }
-.blog-meta{
+
+.blog-meta {
     color: black;
     opacity: 1;
+}
+
+.caro {
+    display: none;
+}
+
+.caro.active {
+    display: block !important;
+}
+
+.shadow-2 {
+    box-shadow: 0px 0px 4px 0px rgb(0 0 0 / 50%);
 }
