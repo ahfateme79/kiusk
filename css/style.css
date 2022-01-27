@@ -659,8 +659,8 @@ h4.location a {
 
 @media screen and (min-width:425px) and (max-width:768px) {
     .price {
-     top: 15.5rem !important;
-}
+        top: 15.5rem !important;
+    }
 
 }
 
@@ -1066,9 +1066,11 @@ ul.list-style-type {
     -ms-border-radius: 5px;
     -o-border-radius: 5px;
 }
-.date{
+
+.date {
     display: none;
 }
+
 @media screen and (max-width:600px) {
     .poster {
         width: 100% !important;
@@ -1088,10 +1090,11 @@ ul.list-style-type {
         display: inline-block;
         font-size: 12px;
     }
-    .article-para h2{
+
+    .article-para h2 {
         color: rgba(0, 0, 0, 0.687) !important;
     }
-    
+
 }
 
 .form-colaps {
@@ -1686,7 +1689,7 @@ a.text-little {
     color: rgb(70, 174, 70) !important;
 }
 
-.article-para p{
+.article-para p {
     font-size: 13px;
 }
 
@@ -2227,4 +2230,57 @@ strong {
 
 .shadow-2 {
     box-shadow: 0px 0px 4px 0px rgb(0 0 0 / 50%);
+}
+
+table td {
+    font-size: 14px;
+    font-weight: lighter;
+}
+
+table th {
+    font-size: 13px;
+    text-align: center;
+}
+table tbody th{
+    padding: 1.5rem .5rem !important;
+}
+table tbody td:first-of-type{
+    padding: 1.5rem .5rem !important;
+}
+table tbody tr:last-child> td:first-of-type{
+    padding:.5rem !important;
+}
+
+table button.btn-success {
+    width: 100% !important;
+    background-color: rgb(10, 167, 10) !important;
+    border-color: rgb(10, 167, 10);
+}
+
+table input {
+    width: 270px !important;
+}
+
+table .btn-primary {
+    background-color: rgb(6, 6, 122) !important;
+    border-radius: 5px 0 0 5px;
+    -webkit-border-radius: 5px 0 0 5px;
+    -moz-border-radius: 5px 0 0 5px;
+    -ms-border-radius: 5px 0 0 5px;
+    -o-border-radius: 5px 0 0 5px;
+    height: 56px;
+}
+thead, tbody, tfoot, tr, td, th {
+    border-color: inherit;
+    border-style: solid;
+    border-width: 1px !important;
+}
+.alert-success{
+    background-color: rgb(172, 238, 201);
+    color: rgb(10, 127, 60);
+    font-size: 13px;
+}
+.alert-success i{
+    color: rgb(10, 127, 60) !important;
+    font-size: 15px;
 }
