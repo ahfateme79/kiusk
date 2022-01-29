@@ -2298,3 +2298,10 @@ header form{
     position: relative;
     z-index: 100;
 }
+.links a{
+    color: #424242 !important;
+    font-size: 13.5px;
+}
+span.links{
+    font-size: 14px;
+}
