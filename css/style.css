@@ -1068,8 +1068,15 @@ ul.list-style-type {
 }
 
 .date {
-    display: none;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    color: white;
+    display: inline-block;
+    font-size: 12px;
 }
+
+
 
 @media screen and (max-width:600px) {
     .poster {
@@ -1080,15 +1087,6 @@ ul.list-style-type {
         -moz-border-radius: 5px 5px 0 0 !important;
         -ms-border-radius: 5px 5px 0 0 !important;
         -o-border-radius: 5px 5px 0 0 !important;
-    }
-
-    .date {
-        position: absolute;
-        bottom: 10px;
-        right: 10px;
-        color: white;
-        display: inline-block;
-        font-size: 12px;
     }
 
     .article-para h2 {
@@ -1141,6 +1139,14 @@ ul.list-style-type {
     padding: 10px 1.2rem !important;
     z-index: 76;
 }
+.box {
+    background-color: #fff;
+    box-shadow: 0 0.1rem 2rem rgb(0 0 0 / 15%);
+    padding: 1.4rem;
+    border-radius: 0.3rem;
+    position: relative;
+    margin: 20px 0;
+}
 
 @media screen and (max-width:600px) {
     .absolot {
@@ -1158,17 +1164,9 @@ ul.list-style-type {
  */
     .profile {
         display: none;
-    }
+    }    
 }
 
-.box {
-    background-color: #fff;
-    box-shadow: 0 0.1rem 2rem rgb(0 0 0 / 15%);
-    padding: 1.4rem;
-    border-radius: 0.3rem;
-    position: relative;
-    margin: 20px 0;
-}
 
 .contact-box {
     display: inline-block;
@@ -2270,6 +2268,18 @@ table .btn-primary {
     -o-border-radius: 5px 0 0 5px;
     height: 56px;
 }
+@media screen and (max-width:700px){
+    table th ,table td{
+        font-size: 10px !important;
+}
+table button{
+    height: 30px;
+    font-size: 10px !important;
+}
+table input{
+    width: 200px !important;
+}
+}
 thead, tbody, tfoot, tr, td, th {
     border-color: inherit;
     border-style: solid;
@@ -2283,4 +2293,8 @@ thead, tbody, tfoot, tr, td, th {
 .alert-success i{
     color: rgb(10, 127, 60) !important;
     font-size: 15px;
+}
+header form{
+    position: relative;
+    z-index: 100;
 }

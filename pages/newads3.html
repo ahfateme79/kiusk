@@ -73,7 +73,8 @@
                                     </div>
                                 </div>
                             </li>
-                            <li class="nav-item d-none d-lg-block"><a href="" class="nav-link child">علاقه‌مندی ها<i class="far fa-chevron-down"></i></a>
+                            <li class="nav-item d-none d-lg-block"><a href="" class="nav-link child">علاقه‌مندی ها<i
+                                        class="far fa-chevron-down"></i></a>
                                 <ul class="inner-ul p-0">
                                     <li class="nav-item"><a href="">املاک</a></li>
                                     <li class="nav-item"><a href="">املاک</a>
@@ -174,7 +175,7 @@
                     </div>
                 </form>
             </div>
-            <div class="container p-0 pt-5
+            <div class="container p-3 pt-5 p-lg-0 pt-lg-5 pb-lg-5
             pb-5">
                 <h3>تماس با ما</h3>
             </div>
@@ -244,14 +245,14 @@
                                 </label>
                             </div>
                         </div>
-
-                        <div class="form-floating p-1">
-                            <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2"
-                                ></textarea>
-                            <label for="floatingTextarea2">Comments</label>
+                        <div class="form-floating">
+                            <!--change this section add some class to label and add mt-5 to textarea-->
+                            <label for="floatingTextarea2" class="p-0 m-3 ms-0 mt-0">Comments</label>
+                            <textarea class="form-control mt-5" placeholder="Leave a comment here"
+                                id="floatingTextarea2"></textarea>
                         </div>
                         <div class="row g-3 p-0">
-                            <div class="col">
+                            <div class="col ps-3">
                                 <select class="form-select" aria-label="Default select example">
                                     <option selected>Open this select menu</option>
                                     <option value="1">One</option>
@@ -259,7 +260,8 @@
                                     <option value="3">Three</option>
                                 </select>
                             </div>
-                            <div class="col">
+                            <!-- add class  pe-0-->
+                            <div class="col pe-0">
                                 <select class="form-select" aria-label="Default select example">
                                     <option selected>Open this select menu</option>
                                     <option value="1">One</option>
@@ -267,6 +269,8 @@
                                     <option value="3">Three</option>
                                 </select>
                             </div>
+                            </div>
+                            <div>
                             <div class="section-title clearfix">
                                 <h2>وبلاگ</h2>
                             </div>
@@ -536,8 +540,8 @@
     <script src="../js/bootstrap.bundle.min.js"></script>
     <script>
         let colaps = document.querySelector('.colpas-button').addEventListener("click", () => {
-           document.querySelector(".fa-search").classList.toggle('d-none')
-           document.querySelector(".fa-times").classList.toggle('disply')
+            document.querySelector(".fa-search").classList.toggle('d-none')
+            document.querySelector(".fa-times").classList.toggle('disply')
         })
     </script>
 </body>
