@@ -2305,3 +2305,27 @@ header form{
 span.links{
     font-size: 14px;
 }
+.page-link {
+    position: relative;
+    display: block;
+    color: #000000 !important;
+    text-decoration: none;
+    background-color: #fff;
+    border: none !important;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+.pagination {
+    display: flex;
+    padding-right: 0;
+    list-style: none;
+    justify-content: center;
+}
+.page-link:hover {
+    color: #0a58ca !important;
+}
+.page-link:focus {
+    color: #0a58ca !important;
+}
+.page-link.active {
+    color: #0a58ca !important;
+}
