@@ -2329,3 +2329,24 @@ span.links{
 .page-link.active {
     color: #0a58ca !important;
 }
+.owl-stage-outer,.owl-carousel.owl-rtl{
+    height: 300px;
+}
+@media screen and (min-width:768px){
+    .owl-stage-outer,.owl-carousel.owl-rtl{
+        min-height: 100%;
+    }
+    
+}
+@media screen and (max-width:425px){
+    .owl-stage-outer,.owl-carousel.owl-rtl{
+        min-height: 125%;
+    }
+    
+}
+@media screen and (min-width:425px) and (max-width:500px){
+    .owl-stage-outer,.owl-carousel.owl-rtl{
+        min-height: 130%;
+    }
+    
+}
