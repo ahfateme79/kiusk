@@ -1855,7 +1855,7 @@ a.text-little {
     background-color: #f8f8f8 !important;
 }
 
-@media screen and (min-width:768px) {
+/* @media screen and (min-width:768px) {
     .little-font {
         transform: translateX(45px);
         -webkit-transform: translateX(45px);
@@ -1864,22 +1864,24 @@ a.text-little {
         -o-transform: translateX(45px);
     }
 
-}
+} */
 
 .little-font span {
-    font-size: 12px;
+    font-size: 11px;
 }
 
 .little-font .btn-danger {
     background-color: brown;
+    display: inline-block;
+    width: auto;
 }
 
 .card-list {
     position: absolute;
     left: 0;
     border-right: 1px solid rgb(186, 178, 178);
-    width: 140px;
-    font-size: 13px;
+    width: 120px;
+    font-size: 12px;
     top: 15px;
 }
 
@@ -1891,6 +1893,8 @@ a.text-little {
     width: 100%;
     display: flex;
     align-items: center;
+    font-weight: bold;
+    cursor: pointer;
 }
 
 .card-list li:hover {
@@ -1958,6 +1962,15 @@ p {
 }
 
 @media screen and (max-width:768px) {
+    .image-cart{
+        width: 100% !important;
+        border-radius: 5px 5px 0 0 !important;
+        -webkit-border-radius: 5px 5px 0 0 !important;
+        -moz-border-radius: 5px 5px 0 0 !important;
+        -ms-border-radius: 5px 5px 0 0 !important;
+        -o-border-radius: 5px 5px 0 0 !important;
+        height: 170px !important;
+}
     .loadmore {
         width: 100%;
     }
@@ -2037,6 +2050,12 @@ p {
 
     .owl-nav {
         display: none !important;
+    }
+    .btn-ads{
+        display: block;
+    }
+    .card-list{
+        display: none;
     }
 }
 
