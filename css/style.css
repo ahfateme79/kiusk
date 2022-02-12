@@ -113,6 +113,7 @@ footer {
 
 .list-style-type li a {
     color: black;
+    font-size: 12px;
 }
 
 .list-style-type li:hover>a {
